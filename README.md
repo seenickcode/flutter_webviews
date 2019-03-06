@@ -1,5 +1,7 @@
 # flutter_webviews
 
+Presenting a web view is pretty common in mobile apps.
+
 ## Steps
 
 1. Create a boilerplate app with `main.dart`, `app.dart` and `screens/home.dart`. Delete `test` directory (`step/step1` branch).
@@ -11,5 +13,6 @@
 
 ## Resources
 
-- https://pub.dartlang.org/packages/webview_flutter
+- The [webview_flutter](https://pub.dartlang.org/packages/webview_flutter) package.
+- [RaisedButton](https://docs.flutter.io/flutter/material/RaisedButton-class.html)
 - [Cool post about RaisedButton](https://flutterdoc.com/widgets-raised-button-9c1c7f335b1f)
