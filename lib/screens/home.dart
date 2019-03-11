@@ -2,18 +2,19 @@ import 'package:flutter/material.dart';
 import 'web_view_container.dart';
 
 class Home extends StatelessWidget {
-  final _links = ['https://google.com'];
+  static final links = ['https://google.com'];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        key: Key('123'),
         body: SafeArea(
             child: SingleChildScrollView(
                 child: Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: _links.map((link) => _urlButton(context, link)).toList(),
-    ))));
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: links.map((link) => _urlButton(context, link)).toList(),
+        ))));
   }
 
   Widget _urlButton(BuildContext context, String url) {
