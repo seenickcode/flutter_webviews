@@ -9,7 +9,7 @@ void main() {
     );
   }
 
-  testWidgets('test home has a button', (WidgetTester tester) async {
+  testWidgets('home has a button', (WidgetTester tester) async {
     await tester.pumpWidget(makeTestableWidget(child: Home()));
 
     final firstButtonFinder = find.text(Home.links.first);
